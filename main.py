@@ -57,5 +57,5 @@ if __name__ == "__main__":
         days_cnt = int(sys.argv[1])
     if platform.system() == 'Windows':
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    r = asyncio.run(main(3))
+    r = asyncio.run(main(days_cnt))
     print(r)
