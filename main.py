@@ -18,6 +18,8 @@ def get_url(addition: str):
 
 async def main(day_cnt):
     exchange_result = []
+    if day_cnt > 10:
+        day_cnt = 10
     async with aiohttp.ClientSession() as session:
         for day_n in range(day_cnt):
             day_str = get_day(day_n)
